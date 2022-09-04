@@ -30,6 +30,10 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     }
+
+    @include desktop {
+        padding: 10px 32px;
+    }
 }
 
 
@@ -48,6 +52,9 @@
         font-size: 26px;
     }
 
+    @include desktop {
+        font-size: 44px;
+    }
 }
 
 .hero__container {
@@ -56,6 +63,10 @@
 
     @include hero__mobile-tablet {
         width: 360px;
+    }
+
+    @include desktop {
+        width: 696px;
     }
 
 }

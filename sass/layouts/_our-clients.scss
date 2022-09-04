@@ -19,11 +19,8 @@
 
 .clients__list {
     display: flex;
-
-    @include pre-mobile {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
+    flex-wrap: wrap;
+    gap: 30px;
 
     @include mobile {
         flex-wrap: wrap;
@@ -80,4 +77,7 @@
         width: calc((100% - 60px) / 3);
     }
 
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
 }

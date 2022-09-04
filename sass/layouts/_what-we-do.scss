@@ -1,9 +1,10 @@
 .what-we-do__section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    display: none;
 
-    @include what-we-do {
-        display: none;
+    @include desktop {
+        display: flex;
+        padding-bottom: 94px;
+        padding-top: 94px;
     }
 
 }

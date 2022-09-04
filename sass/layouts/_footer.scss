@@ -2,14 +2,15 @@
     background-color: var(--grey-colour);
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+
+}
+
+.footer-container {
 
     @include desktop {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        align-items: baseline;
     }
-
 }
 
 .location {
@@ -28,10 +29,23 @@
 .footer__section {
     margin-bottom: 60px;
 
+    @include tablet {
+        margin-bottom: 0
+    }
+}
+
+.footer__section:first-child {
     @include desktop {
         margin-right: 70px;
     }
 }
+
+.footer__section:last-child {
+    @include desktop {
+        margin-right: 93px;
+    }
+}
+
 
 
 
@@ -39,6 +53,10 @@
 .footer__logo {
     display: flex;
     justify-content: center;
+
+    @include desktop {
+        justify-content: start;
+    }
 }
 
 .footer__logo .logo {
@@ -55,6 +73,10 @@
     text-transform: uppercase;
     color: var(--background-colour);
     text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer__sign-up {
@@ -67,6 +89,10 @@
     text-transform: uppercase;
     color: var(--background-colour);
     text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer__media-list {
@@ -150,22 +176,26 @@
     justify-content: space-around;
 
     @include desktop {
-        justify-content: end;
-
+        flex-wrap: nowrap;
     }
-
 }
 
 .footer__social-form {
-
+    display: block;
 
     @include tablet {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 60px;
         flex-direction: row;
         justify-content: space-around;
     }
 
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        // margin-right: 70px;
+    }
 
 }
 
@@ -227,6 +257,10 @@
         color: var(--accent-text-colour);
     }
 
+    @include desktop {
+        text-align: start;
+    }
+
 }
 
 
@@ -236,10 +270,18 @@
 
 .footer__list-item .email {
     justify-content: center;
+
+    @include desktop {
+        justify-content: start;
+    }
 }
 
 .footer__list-item .phone {
     justify-content: center;
+
+    @include desktop {
+        justify-content: start;
+    }
 }
 
 .footer__list-item {

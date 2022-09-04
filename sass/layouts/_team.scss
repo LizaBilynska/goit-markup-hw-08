@@ -11,12 +11,8 @@
 
 .team__list {
     display: flex;
-
-    @include pre-mobile {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
+    flex-wrap: wrap;
+    gap: 30px;
 
     @include mobile {
         flex-wrap: wrap;
@@ -57,6 +53,10 @@
     @include tablet {
         width: calc((100% - 30px)/2);
         gap: 30px;
+    }
+
+    @include desktop {
+        width: calc((100% - 120px) / 4);
     }
 
 

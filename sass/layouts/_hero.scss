@@ -2,7 +2,6 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-position: center;
     background-size: 1600px 600px;
-    width: 100%;
     background-repeat: no-repeat;
     text-align: center;
     padding-bottom: 200px;
@@ -19,7 +18,8 @@
     background-color: var(--accent-text-colour);
     color: var(--background-colour);
     border: 1px transparent;
-    padding: 10px 32px;
+    // padding: 10px 32px;
+    padding: 10px 24px;
     min-width: 216px;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -35,7 +35,8 @@
 
 .decidions {
     font-weight: 900;
-    font-size: 44px;
+    // font-size: 44px;
+    font-size: 21px;
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -43,9 +44,18 @@
     margin-top: 0px;
     margin-bottom: 30px;
 
+    @include hero__mobile-tablet {
+        font-size: 26px;
+    }
 
 }
 
 .hero__container {
-    width: 696px;
+    // width: 696px;
+    width: 100%;
+
+    @include hero__mobile-tablet {
+        width: 360px;
+    }
+
 }

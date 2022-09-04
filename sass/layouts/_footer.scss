@@ -4,10 +4,12 @@
     padding-bottom: 60px;
     display: flex;
 
-    & .container {
+    @include desktop {
         display: flex;
-        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
+
 }
 
 .location {
@@ -24,7 +26,23 @@
 }
 
 .footer__section {
-    margin-right: 70px;
+    margin-bottom: 60px;
+
+    @include desktop {
+        margin-right: 70px;
+    }
+}
+
+
+
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo .logo {
+    margin-right: 0;
 }
 
 .footer__join {
@@ -36,6 +54,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--background-colour);
+    text-align: center;
 }
 
 .footer__sign-up {
@@ -47,13 +66,17 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--background-colour);
+    text-align: center;
 }
 
 .footer__media-list {
     display: flex;
     align-items: center;
     margin-bottom: 0;
+    justify-content: center;
 }
+
+
 
 .footer__social-media {
     margin-right: 10px;
@@ -120,10 +143,41 @@
 
 .online__form {
     display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include desktop {
+        justify-content: end;
+
+    }
+
+}
+
+.footer__social-form {
+
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start
+    }
+
 }
 
 .online__input {
     width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -132,6 +186,17 @@
     padding-right: 16px;
     padding-left: 16px;
     margin-right: 12px;
+    margin-bottom: 20px;
+
+    @include tablet {
+        margin-right: 20%;
+        margin-left: 20%;
+
+    }
+
+    @include desktop {
+        width: 358px;
+    }
 }
 
 .online__btn {
@@ -175,7 +240,20 @@
     margin-bottom: 9px;
 }
 
+.footer__list-item .email {
+    justify-content: center;
+}
+
+.footer__list-item .phone {
+    justify-content: center;
+}
+
+.footer__list-item {
+    text-align: center;
+}
+
 .logo__three {
     color: var(--background-colour);
     margin-bottom: 20px;
+
 }

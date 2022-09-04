@@ -19,8 +19,21 @@
 
 .works-list .works-list__item {
     width: 370px;
-    margin-right: 30px;
+
+    margin-right: 10px;
     margin-bottom: 30px;
+
+    @include desktop {
+        margin-right: 30px;
+    }
+
+}
+
+.works-list__item {
+    @include tablet {
+        width: calc((100% - 30px)/2);
+        gap: 30px;
+    }
 
 }
 

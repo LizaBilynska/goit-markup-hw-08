@@ -63,6 +63,10 @@
     &:focus {
         color: var(--accent-text-colour);
     }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: none;
+    }
 }
 
 
@@ -82,7 +86,12 @@
     &:focus {
         color: var(--accent-text-colour);
     }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: none;
+    }
 }
+
 
 
 .navigation {

@@ -31,7 +31,39 @@
                     </svg>+38 096 111 11 11</a></li>
                 </ul>
 
+                <button type="button" class="header__menu-open-btn" data-menu-open>
+                    <svg class="header__modal-window-mobile" width="40" height="40"><use href="./images/icons.svg#icon-menu_40px"></use></svg>
+                </button>
+                <div class="header__mob-menu is-hidden" data-menu>
+                    <div class="mob-menu-container">
+                        <div class="mob-menu-top">
+                            <button type="button" class="header__menu-close-btn" data-menu-close><svg class="menu-modal-icon" width="18" height="18"><use href="./images/icons.svg#icon-close-black-18dp3"></use></svg></button>
 
+                            <nav class="header__mob-menu-navigation">
+                                <ul class="header__mob-menu-list">
+                                    <li class="header__mob-menu-list-item"><a href="./index.html" class="header__mob-menu-buttons">Студия</a></li>
+                                    <li class="header__mob-menu-list-item"><a href="./portfolio.html" class="header__mob-menu-buttons">Портфолио</a></li>
+                                    <li class="header__mob-menu-list-item"><a href="#" class="header__mob-menu-buttons">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mob-menu-bottom">
+                            <ul class="header__mob-menu-list-two">
+                                <li class="header__mob-menu-list-two-item"><a href="tel:+380961111111" class="mob-menu-phone">+38 096 111 11 11</a></li>
+                                <li class="header__mob-menu-list-two-item"><a href="mailto:info@devstudio.com" class="mob-menu-email">info@devstudio.com</a></li>
+                            </ul>
+
+                        <ul class="header__mob-menu-social-list">
+                            <li class="header__mob-menu-social-list-item"> <a href="" class="header__mob-menu-social-list-link" target="_blank" rel="noopener noreferrer nofollow">Instagram</a><span class="line"></span></li>
+                            <li class="header__mob-menu-social-list-item"> <a href="" class="header__mob-menu-social-list-link" target="_blank" rel="noopener noreferrer nofollow">Twitter</a><span class="line"></span></li>
+                            <li class="header__mob-menu-social-list-item"> <a href="" class="header__mob-menu-social-list-link" target="_blank" rel="noopener noreferrer nofollow">Facebook</a><span class="line"></span></li>
+                            <li class="header__mob-menu-social-list-item"> <a href="" class="header__mob-menu-social-list-link" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a></li>
+                        </ul>
+
+
+                        </div>
+                    </div>
+                </div>
         </div>
     </header>
     
@@ -89,19 +121,19 @@
                 <ul class="what-we-do__list">
                     <li class="what-we-do__photo">
                         <div class="what-we-do__div">
-                            <img src="./images/img1.jpg" alt="Человек работает с ноутбуком" width="370" height="294">
+                            <img srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" src="./images/img1.jpg" alt="Человек работает с ноутбуком" width="370" height="294">
                             <p class="what-we-do__wrap">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="what-we-do__photo">
                         <div class="what-we-do__div">
-                            <img src="./images/img7.jpg" alt="Человек работает с телефоном" width="370" height="294">
+                            <img srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x" src="./images/img7.jpg" alt="Человек работает с телефоном" width="370" height="294">
                             <p class="what-we-do__wrap">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="what-we-do__photo">
                         <div class="what-we-do__div">
-                            <img src="./images/img6.jpg" alt="Человек работает с планшетом" width="370" height="294">
+                            <img srcset="./images/img6.jpg 1x ./images/img6-2x.jpg 2x" src="./images/img6.jpg" alt="Человек работает с планшетом" width="370" height="294">
                             <p class="what-we-do__wrap">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -114,7 +146,12 @@
             <h2 class="our-team" data-aos="zoom-in">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__member">
-                    <img src="./images/img2.jpg" alt="Улыбающийся мужчина в очках с бородой" class="team__member-image">
+                    <picture>
+                        <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/img2-tab.jpg 1x, ./images/img2-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/img2-mob.jpg 1x, ./images/img2-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/img2.jpg" alt="Улыбающийся мужчина в очках с бородой" class="team__member-image" width="450" height="460">
+                    </picture>
                     <div class="name-role">
                         <h3 class="name-surname">Игорь Демьяненко</h3>
                         <p class="role">Product Designer</p>
@@ -128,7 +165,13 @@
                 </li>
 
                 <li class="team__member">
-                    <img src="./images/img3.jpg" alt="Улыбающаяся женщина в очках" class="team__member-image">
+                    <picture>
+                        <source srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/img3-tab.jpg 1x, ./images/img3-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/img3-mob.jpg 1x, ./images/img3-mob-2x.jpg 2x" media="(max-width: 767px)"/>
+                        <img src="./images/img3.jpg" alt="Улыбающаяся женщина в очках" class="team__member-image" width="450" height="460">
+                    </picture>
+
                     <div class="name-role">
                         <h3 class="name-surname">Ольга Репина</h3>
                         <p class="role">Frontend Developer</p>
@@ -142,7 +185,14 @@
                 </li>
 
                 <li class="team__member">
-                    <img src="./images/img4.jpg" alt="Улыбающийся мужчина с маленькой бородой" class="team__member-image">
+                    <picture>
+
+                        <source srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x" media="(min-width: 1200px)" /> 
+                        <source srcset="./images/img4-tab.jpg 1x, ./images/img4-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/img4-mob.jpg 1x, ./images/img4-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/img4.jpg" alt="Улыбающийся мужчина с маленькой бородой" class="team__member-image" width="450" height="460">
+                    </picture>
+                    
                     <div class="name-role">
                         <h3 class="name-surname">Николай Тарасов</h3>
                         <p class="role">Marketing</p>
@@ -157,7 +207,14 @@
                 </li>
                 
                 <li class="team__member">
-                    <img src="./images/img5.jpg" alt="Легко улыбающийся мужчина в очках с бородой" class="team__member-image">
+                    <picture>
+                        <source srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/img5-tab.jpg 1x, ./images/img5-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/img5-mob.jpg 1x, ./images/img5-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/img5.jpg" alt="Легко улыбающийся мужчина в очках с бородой" class="team__member-image" width="450"
+                            height="460">
+                    </picture>
+                    
                     <div class="name-role">
                         <h3 class="name-surname">Михаил Ермаков</h3>
                         <p class="role">UI Designer</p>
@@ -298,5 +355,6 @@
         AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

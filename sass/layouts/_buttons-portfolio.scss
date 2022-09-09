@@ -7,7 +7,9 @@
     // display: flex;
     margin-bottom: 50px;
     padding-left: 0;
-    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
 
     & .list-portfolio__item {
         margin-right: 8px;
@@ -25,19 +27,13 @@
 
     // }
 
-    @include mobile {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: start;
-    }
-
     @include tablet {
-        display: flex;
+        justify-content: center;
 
     }
 
     @include desktop {
-        display: flex;
+        justify-content: center;
 
     }
 }

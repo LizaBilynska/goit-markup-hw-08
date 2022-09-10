@@ -330,6 +330,9 @@ body {
     display: none;
   }
 }
+.header__menu-open-btn:hover, .header__menu-open-btn:focus {
+  fill: var(--accent-text-colour);
+}
 
 .header__mob-menu-buttons {
   font-weight: 500;
@@ -410,6 +413,7 @@ body {
   .hero {
     padding-bottom: 200px;
     padding-top: 200px;
+    background-size: 1600px 600px;
     background-image: var(--bg-gradient), url(../images/hero.jpg);
   }
 }
@@ -481,6 +485,12 @@ body {
 .particular-qualities {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .particular-qualities {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .our-qualities {
@@ -605,17 +615,16 @@ body {
   margin-bottom: 0;
   margin-top: 0;
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+  }
+}
 
 .team__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team__list {
-    flex-wrap: wrap;
-    gap: 30px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
@@ -725,6 +734,12 @@ body {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients__list {
@@ -845,6 +860,7 @@ body {
 
 .footer__logo .logo {
   margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .footer__join {
@@ -1060,7 +1076,6 @@ body {
 
 .logo__three {
   color: var(--background-colour);
-  margin-bottom: 20px;
 }
 
 .our-works__list {
@@ -1188,6 +1203,7 @@ body {
 .works-list__description {
   padding: 20px 24px;
   border: 1px solid var(--smth-grey);
+  border-top: none;
 }
 
 .portfolio-title {
@@ -1235,6 +1251,12 @@ body {
   transition: transform 250ms;
   padding: 40px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1246,6 +1268,7 @@ body {
 }
 
 .modal-close {
+  cursor: pointer;
   position: absolute;
   right: 8px;
   top: 8px;

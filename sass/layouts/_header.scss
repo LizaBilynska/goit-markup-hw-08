@@ -241,6 +241,11 @@
     @include desktop {
         display: none;
     }
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-text-colour);
+    }
 }
 
 .header__mob-menu-buttons {

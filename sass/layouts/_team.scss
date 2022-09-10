@@ -7,17 +7,16 @@
     margin-bottom: 0;
     margin-top: 0;
 
+    @include desktop {
+        padding-top: 94px;
+    }
+
 }
 
 .team__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
-    @include mobile {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
 
     @include tablet {
         flex-wrap: wrap;
